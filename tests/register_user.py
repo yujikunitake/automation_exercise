@@ -148,7 +148,7 @@ def test_register_user(driver: webdriver.Chrome):
     """
     # 14. Verify that 'ACCOUNT CREATED!' is visible
     """
-    account_created_page = AccountCreatedPage()
+    account_created_page = AccountCreatedPage(driver)
     assert account_created_page.verify_account_created() == "ACCOUNT CREATED!", "'ACCOUNT CREATED' is not visible."
 
 
@@ -173,7 +173,7 @@ def test_register_user(driver: webdriver.Chrome):
     """
     # 18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
     """
-    delete_account_page = DeleteAccountPage()
+    delete_account_page = DeleteAccountPage(driver)
     # ACCOUNT DELETED!
     assert delete_account_page.verify_account_deleted() == "ACCOUNT DELETED!", "'ACCOUNT DELETED!' is not visible"
 

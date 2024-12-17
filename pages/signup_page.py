@@ -30,7 +30,7 @@ class SignupPage():
         WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.ID, "newsletter"))).click()
 
     def select_checkbox_offers(self):
-        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.ID, "optin0"))).click()
+        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.ID, "optin"))).click()
 
     def input_first_name(self, first_name):
         WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.ID, "first_name"))).send_keys(first_name)
