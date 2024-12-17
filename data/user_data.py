@@ -3,7 +3,9 @@ USER_DATA = {
     "email": "pullingtheeth@metallica.com",
     "title": "1",
     "password": "Roberto23Agustín10Miguel1964SantiagoSamuelTrujilloVeracruz!",
-    "birth_date": "10/02/1962",
+    "birth_day": "10",
+    "birth_month": "02",
+    "birth_year": "1962",
     "company": "Metallica",
     "address1": "Metal Land",
     "address2": "666",
@@ -11,5 +13,5 @@ USER_DATA = {
     "state": "California",
     "city": "Castro Valley",
     "zipcode": "94541",
-    "phone": "+1 (951) 239-0523"
+    "mobile_number": "+1 (951) 239-0523"
 }
